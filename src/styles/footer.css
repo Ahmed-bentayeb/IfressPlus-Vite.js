@@ -1,0 +1,136 @@
+/* --- FOOTER PRINCIPAL --- */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Contenu du footer */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligner les éléments en haut */
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Section gauche : Qui sommes-nous */
+.footer-left {
+  flex: 1;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-left h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer-left .footer-learn-more {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-left .footer-learn-more:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Logo centré */
+.footer-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 80px; /* Ajuster selon besoin */
+}
+
+/* Section droite : Bouton Contact */
+.footer-right {
+  flex: 1;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.footer-contact-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.footer-contact-button:hover {
+  background-color: #0056b3;
+}
+
+/* Réseaux sociaux & Copyright */
+.footer-bottom {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-social:hover {
+  color: #007BFF;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #7c7d7c;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-left p {
+    max-width: 300px;
+    margin: 0 auto 10px;
+  }
+
+  .footer-center {
+    order: -1; /* Logo en premier sur mobile */
+    margin-bottom: 20px;
+  }
+
+  .footer-right {
+    order: 1; /* Bouton Contact en dernier sur mobile */
+  }
+}

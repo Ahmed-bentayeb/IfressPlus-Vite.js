@@ -1,0 +1,200 @@
+/* Activities.css */
+.activities {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #007BFF;
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width : 768px){
+  .tabs{
+    display : grid;
+    grid-template-columns: repeat(2 , minmax(100px , 300px));
+  }
+}
+
+.tab-button {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab-button:hover {
+  background: #007BFF;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.tab-button{
+  outline: none; /* Supprime le contour */
+}
+
+.tab-button.active {
+  background: #007BFF;
+  color: white;
+  font-weight: bold;
+}
+
+.content {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 2rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.tab-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.key-points {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  color: #333;
+}
+
+.key-points li {
+  margin-bottom: 0.5rem;
+}
+
+
+.gallery-container {
+  padding: 20px;
+}
+ 
+
+.gallery-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 15px;
+}
+ 
+.gallery-item {
+ position: relative;
+ cursor: pointer;
+ overflow: hidden;
+ border-radius: 10px;
+ transition: transform 0.2s ease-in-out;
+}
+ 
+.gallery-item:hover {
+ transform: scale(1.05);
+}
+ 
+.gallery-item img {
+ width: 100%;
+ height: 300px;
+ border-radius: 10px;
+}
+ 
+.gallery-info {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ background: rgba(0, 0, 0, 0.6);
+ color: white;
+ text-align: center;
+ padding: 10px;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+ 
+.lightbox {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background: rgba(0, 0, 0, 0.8);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 1000;
+}
+
+.lightbox img {
+ max-width: 60%;
+ max-height: 90%;
+ animation: fadeIn 0.3s ease-in-out;
+}
+ 
+/* Bouton de fermeture */
+.close-btn {
+ position: absolute;
+ top: 100px;
+ right: 20px;
+ font-size: 3rem;
+ color: white;
+ background: transparent;
+ border: none;
+ cursor: pointer;
+}
+
+.close-btn:focus{
+ border: none;
+}
+
+.prev-btn, .next-btn {
+ position: absolute;
+ color: black;
+ border: none;
+ cursor: pointer;
+ padding: 10px;
+ font-size: 20px;
+
+ background: transparent;
+ color: white;
+ font-size: 2rem;
+ top: 50%;
+
+ transform: translateY(-50%);
+}
+
+.prev-btn {
+ left: 20px;
+}
+
+.next-btn {
+ right: 20px;
+}
+ 
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
+ 
+@media (min-width: 769px) {
+ .lightbox img{
+   max-width: 80%;
+ }
+}

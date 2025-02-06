@@ -1,0 +1,166 @@
+/* --- NAVBAR PRINCIPAL --- */
+.header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  position: fixed; /* Fixer le header en haut de la page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Cacher la navbar lorsqu'elle est invisible (uniquement sur mobile) */
+@media (max-width: 1024px) {
+  .header.hidden {
+    transform: translateY(-100%);
+  }
+  .header.visible {
+    transform: translateY(0);
+  }
+}
+
+/* --- CONTENU HEADER --- */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0;
+}
+
+/* --- LOGO --- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text {
+  height: 35px;
+  width: auto;
+}
+
+/* --- NAVIGATION (Desktop) --- */
+.navigation {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+}
+
+.nav-link:hover {
+  color: #007BFF;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* --- BOUTON HAMBURGER (Mobile uniquement) --- */
+.hamburger {
+  display: none; /* Caché par défaut */
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Transformation pour créer le X */
+.hamburger-line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.hamburger-line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+@media (max-width: 768px) {
+  /* --- NAVIGATION MOBILE --- */
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    gap: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #007BFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .header{
+    box-sizing: border-box;
+  }
+
+  /* Afficher le menu si la classe "show" est active */
+  .navigation.show {
+    display: flex;
+  }
+
+  .logo {
+    flex: 1; /* Centrer le logo */
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    border-top: 1px solid #007BFF; /*#ddd;*/
+    width: 100%;
+  }
+
+  /* Afficher le bouton hamburger seulement sur mobile */
+  .hamburger {
+    display: flex;
+    margin-top: 10px;
+  }
+}
+
+/* --- SUPPRIMER LE BOUTON HAMBURGER SUR GRAND ÉCRAN --- */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Fond semi-transparent pour le menu ouvert */
+.navigation.show::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Placer derrière le menu */
+}

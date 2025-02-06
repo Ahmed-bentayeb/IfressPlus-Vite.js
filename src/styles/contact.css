@@ -1,0 +1,167 @@
+/* Section Contact */
+.contact {
+  padding: 30px 15px; /* Réduire le padding pour les petits écrans */
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.contact-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Titre de la page Contact */
+.contact-title {
+  font-size: 2rem; /* Réduire la taille du titre pour les petits écrans */
+  margin-bottom: 15px;
+  color: #007BFF;
+}
+
+/* Description sous le titre */
+.contact-description {
+  font-size: 1.4rem; /* Réduire la taille de la description */
+  /*font-size: 30px;
+  font-weight: 550;*/
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Conteneur principal des coordonnées et de la carte */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* Section des coordonnées */
+.contact-info {
+  width: 45%;
+  text-align: left;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem; /* Réduire la taille du titre */
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 1rem; /* Réduire la taille du texte */
+  margin: 8px 0;
+}
+
+/* Section de la carte */
+.map-container {
+  width: 45%;
+  height: 450px; /* Hauteur de la carte */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Formulaire */
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 1.5rem; /* Réduire la taille du titre */
+  margin-bottom: 15px;
+  color: #007BFF;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.form-group textarea {
+  font-family: 'Roboto', sans-serif;
+  resize: vertical;
+  min-height: 100px; /* Ajuster la hauteur du textarea */
+}
+
+.submit-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Réduire la taille du texte */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Assombrir légèrement au survol */
+}
+
+/* Messages d'erreur et de succès */
+.error-message {
+  color: #ff0000;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Empiler les éléments verticalement */
+    gap: 20px;
+  }
+
+  .contact-info,
+  .map-container {
+    width: 100%; /* Prendre toute la largeur */
+  }
+
+  .map-container {
+    height: 300px; /* Réduire la hauteur de la carte */
+    order: 2; /* Placer la carte en dessous des coordonnées */
+  }
+
+  .contact-info {
+    order: 1; /* Placer les coordonnées en premier */
+  }
+
+  .contact-form {
+    padding: 15px; /* Réduire le padding */
+  }
+
+  .contact-form h2 {
+    font-size: 1.3rem; /* Réduire la taille du titre */
+  }
+
+  .form-group input,
+  .form-group textarea { 
+    padding: 8px; /* Réduire le padding des champs */
+  }
+
+  .submit-button {
+    width: 100%; /* Bouton plein largeur */
+  }
+}
