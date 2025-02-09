@@ -18,7 +18,7 @@ const Footer = () => {
 
         {/* Logo centré */}
         <div className="footer-center">
-          <img src="/images/footer-logo-transparent.png" alt="IFRESS PLUS" className="footer-logo" />
+          <img src="/images/footer-logo-transparent.webp" alt="IFRESS PLUS" className="footer-logo" />
         </div>
 
         {/* Section droite : Bouton Contact */}
