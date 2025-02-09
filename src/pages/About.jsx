@@ -36,7 +36,7 @@ function About() {
                         </div>
                     </div>
                     <div className="about-image-container">
-                        <img src="/images/ifress3.jpg" alt="IFRESS PLUS" className="about-image" />
+                        <img src="/images/ifress3.webp" alt="IFRESS PLUS" className="about-image" />
                     </div>
                 </div>
             </div>
