@@ -999,13 +999,6 @@ export const activitiesGallery = [
     type: 'Travaux Batiments',
   },
   {
-    id: 140,
-    image: '/images/travaux-batiment2.webp',
-    title: 'Travaux batiments',
-    post: 'Village',
-    type: 'Travaux Batiments',
-  },
-  {
     id: 141,
     image: '/images/travaux-batiment3.webp',
     title: 'Travaux batiments',

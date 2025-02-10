@@ -27,7 +27,7 @@
 }
 
 .tab-button {
-  background: #f4f4f4;
+  background: #ffffff;
   border: 1px solid #ddd;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
@@ -54,7 +54,7 @@
 }
 
 .content {
-  background: #f4f4f4;
+  background: #ffffff;
   border-radius: 8px;
   padding: 2rem;
   font-size: 1.2rem;
@@ -68,7 +68,7 @@
 }
 
 .tab-content p {
-  color: #555;
+  color: #222;
   line-height: 1.6;
   margin-bottom: 1rem;
 }

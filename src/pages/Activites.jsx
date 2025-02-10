@@ -156,7 +156,7 @@ function Activites() {
                 <ul className="key-points">
                     <li>Montage de structures métalliques</li>
                     <li>Installation de lignes de production</li>
-                    <li>Maintenance industrielle et rénovation d’équipements</li>
+                    <li>Maintenance batiments industrielle et rénovation d’équipements</li>
                     <li>Gestion de projets industriels complexes</li>
                 </ul>
                 <p>
@@ -169,14 +169,13 @@ function Activites() {
             <div className="tab-content">
                 <h2>Travaux Batiments</h2>
                 <p>
-                  Notre expertise en travaux de bâtiments nous permet de réaliser des constructions solides, fonctionnelles et adaptées aux besoins de nos clients.
+                  Notre expertise en travaux de bâtiments nous permet de réaliser des constructions , fonctionnelles et adaptées aux besoins de nos clients.
                   Nous intervenons sur divers types de projets, allant des bâtiments industriels aux infrastructures commerciales et résidentielles.
                   <br/> Nos services incluent :
                 </p>
                   <ul className="key-points">
                     <li>Construction de structures en béton et en acier : Conception et mise en œuvre de bâtiments durables et conformes aux normes en vigueur</li>
                     <li>Aménagement intérieur et extérieur : Optimisation des espaces pour un usage pratique et esthétique.</li>
-                    <li>Maintenance industrielle et rénovation d’équipements</li>
                     <li>Rénovation et réhabilitation : Modernisation et amélioration des bâtiments existants.</li>
                     <li>Gestion et suivi de projet : Accompagnement à chaque étape, de la conception à la livraison finale.</li>
                   </ul>

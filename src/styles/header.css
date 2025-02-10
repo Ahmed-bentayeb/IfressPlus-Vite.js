@@ -44,11 +44,6 @@
   width: auto;
 }
 
-.logo-text {
-  height: 35px;
-  width: auto;
-}
-
 /* --- NAVIGATION (Desktop) --- */
 .navigation {
   display: flex;

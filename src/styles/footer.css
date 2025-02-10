@@ -2,18 +2,18 @@
 .footer {
   background-color: #222;
   color: white;
-  padding: 20px 0;
+  padding: 15px 0;
   text-align: center;
+  font-size: 0.9rem;
 }
 
 /* Contenu du footer */
 .footer-content {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Aligner les éléments en haut */
-  padding: 20px;
+  align-items: center;
+  padding: 15px 20px;
   flex-wrap: wrap;
 }
 
@@ -21,30 +21,30 @@
 .footer-left {
   flex: 1;
   text-align: left;
-  margin-bottom: 20px;
+  min-width: 250px;
 }
 
 .footer-left h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
 }
 
 .footer-left p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
 }
 
-.footer-left .footer-learn-more {
+.footer-learn-more {
   color: #007BFF;
-  text-decoration: none;
+  font-size: 1rem;
   font-weight: bold;
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-.footer-left .footer-learn-more:hover {
-  color: #0056b3;
+.footer-learn-more:hover {
   text-decoration: underline;
+  color: #0056b3;
 }
 
 /* Logo centré */
@@ -52,48 +52,59 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 .footer-logo {
-  height: 80px; /* Ajuster selon besoin */
+  height: 80px; /* Taille réduite */
 }
 
-/* Section droite : Bouton Contact */
+/* Section droite : Contact & Carte */
 .footer-right {
   flex: 1;
   text-align: right;
-  margin-bottom: 20px;
+  min-width: 250px;
 }
 
 .footer-contact-button {
   background-color: #007BFF;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .footer-contact-button:hover {
   background-color: #0056b3;
 }
 
+/* Google Maps */
+.footer-map {
+  margin-top: 5px;
+}
+
+.google-map-iframe {
+  border-radius: 5px;
+}
+
 /* Réseaux sociaux & Copyright */
 .footer-bottom {
   width: 100%;
-  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #333;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .footer-social {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
-  margin-bottom: 10px;
   transition: color 0.3s ease;
+  margin-bottom: 5px;
 }
 
 .footer-social:hover {
@@ -101,36 +112,29 @@
 }
 
 .footer-bottom p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  color: #bbb;
   margin: 0;
-  color: #7c7d7c;
 }
 
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .footer-left,
+  .footer-left, 
   .footer-right {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
-  .footer-left p {
-    max-width: 300px;
-    margin: 0 auto 10px;
-  }
-
-  .footer-center {
-    order: -1; /* Logo en premier sur mobile */
-    margin-bottom: 20px;
+  .footer-logo {
+    height: 55px;
   }
 
   .footer-right {
-    order: 1; /* Bouton Contact en dernier sur mobile */
+    order: 1;
   }
 }

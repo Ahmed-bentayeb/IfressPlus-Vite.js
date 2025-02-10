@@ -35,8 +35,7 @@ function Header() {
       <div className="header-content">
         <div className="logo">
           <Link to="/">
-            <img src="/images/logo.webp" alt="logo" className="logo-icon" />
-            <img src="/images/logo-text.webp" alt="text logo" className="logo-text" />
+          <img src="/images/logo-header.webp" alt="logo" className="logo-icon" />
           </Link>
         </div>
 
