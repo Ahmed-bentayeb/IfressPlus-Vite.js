@@ -156,7 +156,7 @@ function Activites() {
                 <ul className="key-points">
                     <li>Montage de structures métalliques</li>
                     <li>Installation de lignes de production</li>
-                    <li>Maintenance batiments industrielle et rénovation d’équipements</li>
+                    <li>Maintenance batiments Industriels et rénovation d’équipements</li>
                     <li>Gestion de projets industriels complexes</li>
                 </ul>
                 <p>
