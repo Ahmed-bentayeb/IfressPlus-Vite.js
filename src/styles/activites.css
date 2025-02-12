@@ -34,7 +34,7 @@
   font-size: 1rem;
   color: #333;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: background ease-out 0.1s, color ease-out 0.1s, transform 0.3s;
 }
 
 .tab-button:hover {
@@ -43,16 +43,20 @@
   transform: scale(1.05);
 }
 
-.tab-button{
+.tab-button, .tab-button:focus, .tab-button:focus-visible{
   outline: none; /* Supprime le contour */
 }
 
 .tab-button.active {
   background: #007BFF;
   color: white;
-  font-weight: bold;
+  transition: background 0.3s ease-in, color 0.3s ease-in;
 }
 
+/* Transition plus rapide pour la désactivation (0.1s) */
+.tab-button:not(.active) {
+  transition: background 0.2s ease-out, color 0.2s ease-out;
+}
 .content {
   background: #ffffff;
   border-radius: 8px;

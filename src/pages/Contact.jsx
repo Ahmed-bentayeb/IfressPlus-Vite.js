@@ -133,8 +133,6 @@ function Contact() {
                     <div className="map-container">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1597.9845235669022!2d3.057956!3d36.77131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb2f62680466b%3A0x7a1c022813b158aa!2sEsc.%20Merouane%20ABBAS%2C%20Alger%20Centre%2016000%2C%20Alg%C3%A9rie!5e0!3m2!1sfr!2sus!4v1738000109955!5m2!1sfr!2sus"
-                            width="450"
-                            height="450"
                             style={{ border: 0 }}
                             allowFullScreen=""
                             loading="lazy"

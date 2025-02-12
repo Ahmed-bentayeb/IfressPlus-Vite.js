@@ -67,6 +67,11 @@
   overflow: hidden;
 }
 
+.google-map-iframe{
+  width: 450px;
+  height: 450px;
+}
+
 /* Formulaire */
 .contact-form {
   background-color: #fff;
@@ -138,17 +143,23 @@
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column; /* Empiler les éléments verticalement */
+    align-items: center;
     gap: 20px;
   }
 
-  .contact-info,
-  .map-container {
-    width: 100%; /* Prendre toute la largeur */
+  .contact-info{
+    width: 90%; /* Prendre toute la largeur */
   }
 
   .map-container {
+    width: 100%;
     height: 300px; /* Réduire la hauteur de la carte */
     order: 2; /* Placer la carte en dessous des coordonnées */
+  }
+
+  .google-map-iframe{
+    width: 100%;
+    height: 100%;
   }
 
   .contact-info {
@@ -166,6 +177,7 @@
   .form-group input,
   .form-group textarea { 
     padding: 8px; /* Réduire le padding des champs */
+    box-sizing: border-box;  
   }
 
   .submit-button {
